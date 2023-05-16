@@ -1,15 +1,142 @@
 /* font imports */
 
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Sedgwick+Ave+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Irish+Grover&family=Sedgwick+Ave+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Irish+Grover&family=Sedgwick+Ave+Display&family=Slackey&display=swap');
+
 
 /* styles for webpage */
 
 * {
-    font-family: 'Gruppo', cursive;         
+    font-family: 'Gruppo', cursive; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
 }
 
+body {
+    background-image: url("images/background\ 2.png");
+    background-size: cover;
+    background-color: rgba(255,255, 255, 0.5);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon,
+footer .footnav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social_icon li,
+footer .footnav li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+    color: rgb(105, 255, 130);
+}
+
+footer .footnav li a {
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+footer .footnav li a:hover {
+    opacity: 1;
+    font-size: 1.3em;
+    color: rgb(105, 255, 130);
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 2.7%;
+    font-size: 1.1em;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(images/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
                                                      /* NAVIGATION BAR */
 
 /* start of css styles for NAVBAR */
@@ -118,7 +245,7 @@
 }
 
 .startcard2 {
-    background-image: url(images/classic_krabby_patty-removebg-preview.png);
+    background-image: url(images/chumstick\ menu.png);
     padding-top: 13%;
 }
 
@@ -204,10 +331,11 @@
     background-size: cover;
     text-align: center;
     transition: transform 0.5s;
+    margin-bottom: 100px;
 }
 
 .altcard1 {
-    background-image: url(images/classic_krabby_patty-removebg-preview.png);
+    background-image: url(images/r\ kelpshake\ menu.png);
     padding-top: 13%;
 }
 
@@ -327,7 +455,7 @@
     line-height: 1.4em;
 }
 
-.btn {
+.menubtn {
     margin-top: 15px;
     padding: 7px;
 }
@@ -364,16 +492,14 @@
 
 /* this is the styles for booking cards */
 
+.bookingcard {
+    margin-bottom: 150px;
+}
+
 .bookh1 {
     margin: 20px;
     text-align: center;
 
-}
-
-body {
-    background-image: url("images/background\ 2.png");
-    background-size: cover;
-    background-color: rgba(255,255, 255, 0.5);
 }
 
 .forms {
@@ -396,7 +522,7 @@ body {
 
 }
 
-.btn {
+.subbtn {
     margin-bottom: 20px;
 }
 
@@ -428,6 +554,8 @@ body {
     background-image: linear-gradient(to right, #c2f4a8, #97e1dc),
                       linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   }
+
+  /* end of font & border deisgns for booking forms */
 
   /* css for word in supercard header */
 .cardword {
