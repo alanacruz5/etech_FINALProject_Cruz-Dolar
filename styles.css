@@ -167,9 +167,16 @@ footer .wave#wave4 {
     color: white;
 }
 
+.headerword{
+    position: relative;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 75px;
+    margin-bottom: none;
+}
+
 .menuword {
     position: absolute;
-    top: 50%;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Sedgwick Ave Display', cursive;
@@ -179,12 +186,83 @@ footer .wave#wave4 {
 
 .orderbtn {
     position: absolute;
-    top: 63%;
+    top: 325px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 75px;
 }
+
+@media (max-width: 2000px) {
+    .kelpbtn {
+        position: absolute;
+        top: 360px;
+    }
+
+    .chumbtn {
+        position: absolute;
+        top: 360px;
+    }
+  }
+
+@media (max-width: 1300px) {
+    .orderbtn-menu {
+        position: absolute;
+        top: 360px;
+    }
+  }
+
+@media (max-width: 1200px) {
+    .saltbtn {
+        position: absolute;
+        top: 360px;
+    }
+  }
+
+  @media (max-width: 995px) {
+    .bookbtn-tab {
+        position: absolute;
+        top: 360px;
+    }
+  }
+
+@media (max-width: 900px) {
+    .packbtn {
+        position: absolute;
+        top: 360px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .chumbtn {
+        position: absolute;
+        top: 410px;
+    }
+  }
+
+@media (max-width: 800px) {
+    .orderbtn-menu {
+        position: absolute;
+        top: 410px;
+
+    }
+
+    .bookbtn {
+        position: absolute;
+        top: 400px;
+
+    }
+
+  }
+
+  @media (max-width: 670px) {
+    .saltbtn {
+        position: absolute;
+        top: 410px;
+    }
+  }
+
+  /* ---------------------------------------------------------------------- */
 
 .orderbutton {
     font-family: 'Gruppo', cursive;
@@ -205,6 +283,8 @@ footer .wave#wave4 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(126, 255, 234, 0.19);
 }
 
+
+
 /* end of css styles for MENU HEADER */
 
 /* this is the styles for FOOD menu item list */
@@ -217,6 +297,10 @@ footer .wave#wave4 {
 .firstrow {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    position: relative;
 }
 
 .startcard {
@@ -237,7 +321,7 @@ footer .wave#wave4 {
 
 .startcard1 {
     background-image: url(images/classic_krabby_patty-removebg-preview.png);
-    padding-top: 13%;
+    padding-top: 180px;
 }
 
 #krabbypatty {
@@ -246,17 +330,21 @@ footer .wave#wave4 {
 
 .startcard2 {
     background-image: url(images/chumstick\ menu.png);
-    padding-top: 13%;
+    padding-top: 180px;
 }
 
 .startcard3 {
     background-image: url(images/classic_krabby_patty-removebg-preview.png);
-    padding-top: 13%;
+    padding-top: 180px;
 }
 
 .secrow {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    position: relative;
 }
 
 .subcard {
@@ -268,7 +356,7 @@ footer .wave#wave4 {
     padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
-    margin: 30px 15px;
+    margin: 10px 15px;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -277,17 +365,17 @@ footer .wave#wave4 {
 
 .subcard1 {
     background-image: url(images/classic_krabby_patty-removebg-preview.png);
-    padding-top: 13%;
+    padding-top: 180px;
 }
 
 .subcard2 {
     background-image: url(images/classic_krabby_patty-removebg-preview.png);
-    padding-top: 13%;
+    padding-top: 180px;
 }
 
 .subcard3 {
     background-image: url(images/classic_krabby_patty-removebg-preview.png);
-    padding-top: 13%;
+    padding-top: 180px;
 }
 
 /* animation for food cards */
@@ -308,6 +396,7 @@ footer .wave#wave4 {
 
 .drinksh1 {
     margin: 5px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -315,6 +404,10 @@ footer .wave#wave4 {
 .thirdrow {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    position: relative;
 }
 
 .altcard {
@@ -326,28 +419,59 @@ footer .wave#wave4 {
     padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
-    margin: 30px 15px;
+    margin-left: 15px;
     background-position: center;
     background-size: cover;
     text-align: center;
     transition: transform 0.5s;
-    margin-bottom: 100px;
+    margin-bottom: 15px;
 }
 
 .altcard1 {
     background-image: url(images/r\ kelpshake\ menu.png);
-    padding-top: 13%;
+    padding-top: 180px;
 }
 
 .altcard2 {
-    background-image: url(images/classic_krabby_patty-removebg-preview.png);
-    padding-top: 13%;
+    background-image: url(images/fun\ jellyshake\ menu.png);
+    padding-top: 185px;
 }
 
 .altcard3 {
-    background-image: url(images/classic_krabby_patty-removebg-preview.png);
-    padding-top: 12%;
+    background-image: url(images/L\ saltwater\ menu.png);
+    padding-top: 180px;
+    margin-bottom: 100px;
 }
+
+.menuitem {
+    position: relative
+}
+
+.menutext {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+}
+
+/* make the menu cards mobile responsive */
+
+@media (max-width: 400px) {
+    .firstrow {
+      flex-direction: column;
+    }
+  }
+
+@media (max-width: 400px) {
+    .secrow {
+      flex-direction: column;
+    }
+  }
+
+@media (max-width: 400px) {
+    .thirdrow {
+      flex-direction: column;
+    }
+  }
 
 /* animation for drink cards */
 
@@ -363,6 +487,11 @@ footer .wave#wave4 {
 
 
 /* this is the styles for Krabby Patty Menu header */
+
+.pattyheader {
+    display: flex;
+    flex-direction: column;
+}
 
 .pattyheader h4{
     position: absolute;
@@ -384,14 +513,6 @@ footer .wave#wave4 {
     margin-bottom: none;
 }
 
-.orderbtn-patty {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 75px;
-}
 
 /* animation for buttons in header of each page */
 
@@ -460,6 +581,11 @@ footer .wave#wave4 {
     padding: 7px;
 }
 
+
+.menuordrbtn {
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
 /* end of styles for menu item list (krabby patty, chum specials, kelp fries, nachos, pizzas, package meals) */
 
 
@@ -513,6 +639,12 @@ footer .wave#wave4 {
     padding: 8px;
     justify-content: space-evenly;
 }
+
+.carddescrip {
+    text-align: justify;
+    font-size: large;
+}
+
 .theme {
     margin: 5px 5px 5px 5px;
     width: 400px;
@@ -526,6 +658,9 @@ footer .wave#wave4 {
     margin-bottom: 20px;
 }
 
+.subbtnTab {
+    margin-bottom: 120px;
+}
 /* font & border deisgns for booking forms */
 
 .formheaders {
@@ -560,7 +695,7 @@ footer .wave#wave4 {
   /* css for word in supercard header */
 .cardword {
     position: absolute;
-    top: 37%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Sedgwick Ave Display', cursive;
@@ -569,5 +704,73 @@ footer .wave#wave4 {
     color: white;
   }
 
+  .box-container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin-bottom: 100px;
+  }
 
-  
+  .boxes {
+    width: 320px;
+    padding: 15px;
+    min-height: 430px;
+  }
+
+  .box1 {
+    background-color: #d2f0ee;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .box2 {
+    background-color: #d6ffc0;
+  }
+
+  .box3 {
+    background-color: lightyellow;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .content h2 {
+    font-family: 'Irish Grover', cursive;
+    margin: 20px 0;
+  }
+
+  .box1 h2{
+    color: #63a19d;
+  }
+
+  .box1 p{
+    text-align: justify;
+  }
+
+
+  .box2 svg, .box2 h2{
+    color: rgb(2, 86, 2);
+  }
+
+  .box3 svg, .box3 h2{
+    color: rgb(199, 199, 98);
+  }
+
+  .boxes ul {
+    list-style: none;
+  }
+
+  .box2 ul, .box3 ul {
+    padding-top: 15px;
+  }
+
+  .boxes li {
+    margin-bottom: 5px;
+    font-weight: 590;
+  }
